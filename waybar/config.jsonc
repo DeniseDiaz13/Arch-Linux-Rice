@@ -1,0 +1,82 @@
+{
+  "layer": "top",
+  "position": "top",
+  "autohide": true,
+  "autohide-blocked": false,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "modules-left": [
+    "custom/archicon",
+    "temperature",
+    "pulseaudio",
+    "hyprland/language"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "clock",
+    "memory",
+    "custom/power"
+  ],
+  "custom/archicon": {
+    "format": "󰣇",
+    "on-click": "rofi -show drun -theme style.rasi",
+    "tooltip": false
+  },
+  "temperature": {
+    "hwmon-path": "/sys/devices/pci0000:00/0000:00:08.1/0000:08:00.0/hwmon/hwmon1/temp1_input",
+    "format": "{temperatureC}°C {icon}",
+    "tooltip": true,
+    "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
+    "format-icons": [
+      ""
+    ],
+    "interval": 5
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-muted": " {format_source}",
+    "format-icons": {
+      "default": [
+        "",
+        ""
+      ]
+    }
+  },
+  "hyprland/language": {
+    "format": "{} ",
+    "on-click": "hyprctl switchxkblayout evision-akko-keyboard next",
+    "format-es": "ESP",
+    "format-en": "ENG"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "<span font='12'>󰮯</span>",
+      "empty": "<span font='12'>󰊠</span>",
+      "default": "<span font='12'></span>"
+    },
+    "persistent-workspaces": {
+      "*": 9
+    },
+    "disable-scroll": true,
+    "all-outputs": true,
+    "show-special": true
+  },
+  "clock": {
+    "format": "{:%I:%M %p | %d-%b-%Y}",
+    "tooltip-format": "{calendar}",
+    "timezone": "America/Mexico_City",
+    "on-click": "gsimplecal"
+  },
+  "memory": {
+    "format": "{used:0.2f}G | {total:0.2f}G 󰍛"
+  },
+  "custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh"
+  }
+}

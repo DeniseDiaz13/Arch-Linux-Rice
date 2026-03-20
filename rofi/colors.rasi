@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors (Nord Palette)
+ **/
+
+* {
+    background:     #2E3440; /* Polar Night 0 */
+    background-alt: #3B4252; /* Polar Night 1 */
+    foreground:     #D8DEE9; /* Snow Storm 0 */
+    selected:       #88C0D0; /* Frost 1 */
+    active:         #A3BE8C; /* Frost 3 */
+    urgent:         #BF616A; /* Aurora Red */
+}
