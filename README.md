@@ -14,8 +14,11 @@ Focused on a minimal, clean, and functional workflow.
 - **Terminal:** Alacritty  
 - **Launcher:** Rofi  
 - **Bar:** Waybar  
-- **Editor:** Neovim (LunarVim)  
+- **Editor:** Neovim (LunarVim)
+- **Alternative Editor:** nano
 - **PDF Viewer:** Zathura  
+- **Shell:** zsh
+- **Prompt Theme:** p10k
 
 ## CLI Tools
 - **lsd** – modern replacement for ls  
@@ -48,6 +51,9 @@ cp -r waybar ~/.config/
 cp -r rofi ~/.config/
 cp -r alacritty ~/.config/
 ...
+cp .zshrc ~/
+cp .nanorc ~/
+cp .p10k.zsh ~/
 ```
 
 ## Notes
