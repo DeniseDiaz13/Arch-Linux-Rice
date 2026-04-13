@@ -63,6 +63,6 @@ cp .p10k.zsh ~/
 - Designed for Arch Linux  
 - Some dependencies must be installed manually  
 - Paths and configs may require adjustment depending on your system  
-
+- Don’t forget to grant execute permissions to the .sh files (chmod u+x)
 ## Credits
 Configurations and themes are adapted from various community sources.
