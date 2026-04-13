@@ -7,6 +7,7 @@ Focused on a minimal, clean, and functional workflow.
 ## Preview
 ![Desktop 1](desk_1.png)  
 ![Desktop 2](desk_2.png)
+![Desktop 3](desk_3.png)
 ![Firefox_config](firefox.png)
 
 ## Core Components
@@ -14,17 +15,19 @@ Focused on a minimal, clean, and functional workflow.
 - **Terminal:** Alacritty  
 - **Launcher:** Rofi  
 - **Bar:** Waybar  
-- **Editor:** Neovim (LunarVim)
+- **Editor:** Neovim
 - **Alternative Editor:** nano
 - **PDF Viewer:** Zathura  
 - **Shell:** zsh
 - **Prompt Theme:** p10k
+- **Notifications:** swaync
 
 ## CLI Tools
 - **lsd** – modern replacement for ls  
 - **bat** – cat with syntax highlighting  
 - **fastfetch / ufetch** – system info tools  
 - **htop** – process viewer  
+- **cmatrix** - matrix effect
 
 ## Firefox Extension
 - **nightTab** – by zombieFox
@@ -34,12 +37,12 @@ Focused on a minimal, clean, and functional workflow.
 - `hypr/` → Hyprland config  
 - `rofi/` → launcher themes and config  
 - `waybar/` → bar configuration  
-- `lvim/` → Neovim (LunarVim) setup  
+- `nvim/` → Neovim setup  
 - `zathura/` → PDF viewer config  
 
 ## Installation
 Clone the repository:
-```bash
+```bash or zsh 
 git clone https://github.com/DeniseDiaz13/Arch-Linux-Rice.git
 cd Rice
 ```

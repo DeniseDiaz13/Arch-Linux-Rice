@@ -1,0 +1,9 @@
+brave-bin
+bridge-utils
+networkmanager-qt5
+ttf-meslo-nerd-font-powerlevel10k
+ufetch-git
+yay
+youtube-music
+zapzap
+zsh-theme-powerlevel10k-git
