@@ -63,6 +63,14 @@ cp .p10k.zsh ~/
 - Designed for Arch Linux  
 - Some dependencies must be installed manually  
 - Paths and configs may require adjustment depending on your system  
+- For autologin, you need to create or modify `/etc/systemd/system/getty@tty1.service.d/override.conf` 
+and add the following lines, (replace USER with your system username; do not include brackets):
+```
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin {USER} --noclear %I $TERM
+```
 - Don’t forget to grant execute permissions to the .sh files (chmod u+x)
+
 ## Credits
 Configurations and themes are adapted from various community sources.
