@@ -10,16 +10,11 @@
     "custom/archicon",
     "temperature",
     "pulseaudio",
+    "custom/music",
     "hyprland/language"
   ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-  "modules-right": [
-    "clock",
-    "memory",
-    "custom/power"
-  ],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["clock", "memory", "custom/notification", "custom/power"],
   "custom/archicon": {
     "format": "󰣇",
     "on-click": "rofi -show drun -theme style.rasi",
@@ -30,20 +25,24 @@
     "format": "{temperatureC}°C {icon}",
     "tooltip": true,
     "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
-    "format-icons": [
-      ""
-    ],
+    "format-icons": [""],
     "interval": 5
   },
   "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-muted": " {format_source}",
+    "format": "{icon} {volume}% ",
+    "format-muted": " {format_source}",
     "format-icons": {
-      "default": [
-        "",
-        ""
-      ]
-    }
+      "default": ["", ""]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+  "custom/music": {
+    "exec": "~/.config/waybar/music-player.sh",
+    "interval": 2,
+    "return-type": "text",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
   },
   "hyprland/language": {
     "format": "{} ",
@@ -59,7 +58,7 @@
       "default": "<span font='12'></span>"
     },
     "persistent-workspaces": {
-      "*": 9
+      "*": 8
     },
     "disable-scroll": true,
     "all-outputs": true,
@@ -74,9 +73,29 @@
   "memory": {
     "format": "{used:0.2f}G | {total:0.2f}G 󰍛"
   },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='14pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
   "custom/power": {
     "format": "  ",
     "tooltip": false,
-    "on-click": "~/.config/rofi/powermenu/powermenu.sh"
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh",
   }
 }
