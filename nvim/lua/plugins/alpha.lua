@@ -1,7 +1,7 @@
 return {
 	"goolord/alpha-nvim",
 	dependencies = {
-		"nvim-tree/nvim-web-devicons", -- o mini.icons, pero elige uno
+		"nvim-tree/nvim-web-devicons",
 		"nvim-lua/plenary.nvim",
 	},
 

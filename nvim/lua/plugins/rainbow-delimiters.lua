@@ -4,7 +4,7 @@ return {
     vim.g.rainbow_delimiters = {
       strategy = {
         [''] = 'rainbow-delimiters.strategy.global',
-        html = 'rainbow-delimiters.strategy.local', -- 👈 mejora para templates
+        html = 'rainbow-delimiters.strategy.local',
       },
       query = {
         [''] = 'rainbow-delimiters',
