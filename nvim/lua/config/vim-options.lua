@@ -7,6 +7,7 @@ vim.cmd("set shiftwidth=2")
 vim.o.showtabline = 2
 
 local augroup = vim.api.nvim_create_augroup("TreesitterStart", { clear = true })
+vim.g.db_ui_save_location = './.db_queries'
 
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup,

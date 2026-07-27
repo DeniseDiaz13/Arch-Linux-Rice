@@ -33,7 +33,5 @@ return {
     })
 
     vim.cmd.colorscheme("tokyonight")
-    vim.keymap.set("n", "<C-e>", ":Neotree toggle left<CR>", {})
-    vim.keymap.set("n", "<leader>e", ":Neotree focus<CR>", { noremap = true, silent = true })
   end,
 }

@@ -11,8 +11,8 @@
 ## style-6   style-7   style-8   style-9   style-10
 
 # Current Theme
-dir="$HOME/.config/rofi/powermenu"
-theme='style'
+dir="$HOME/.config/rofi/styles"
+theme='powermenu'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"

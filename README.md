@@ -7,7 +7,6 @@ Focused on a minimal, clean, and functional workflow.
 ## Preview
 ![Desktop 1](desk_1.png)  
 ![Desktop 2](desk_2.png)
-![Desktop 3](desk_3.png)
 ![Firefox_config](firefox.png)
 
 ## Core Components
@@ -15,19 +14,17 @@ Focused on a minimal, clean, and functional workflow.
 - **Terminal:** Alacritty  
 - **Launcher:** Rofi  
 - **Bar:** Waybar  
-- **Editor:** Neovim
+- **Editor:** Neovim (LunarVim)
 - **Alternative Editor:** nano
 - **PDF Viewer:** Zathura  
 - **Shell:** zsh
 - **Prompt Theme:** p10k
-- **Notifications:** swaync
 
 ## CLI Tools
 - **lsd** – modern replacement for ls  
 - **bat** – cat with syntax highlighting  
 - **fastfetch / ufetch** – system info tools  
 - **htop** – process viewer  
-- **cmatrix** - matrix effect
 
 ## Firefox Extension
 - **nightTab** – by zombieFox
@@ -37,12 +34,12 @@ Focused on a minimal, clean, and functional workflow.
 - `hypr/` → Hyprland config  
 - `rofi/` → launcher themes and config  
 - `waybar/` → bar configuration  
-- `nvim/` → Neovim setup  
+- `lvim/` → Neovim (LunarVim) setup  
 - `zathura/` → PDF viewer config  
 
 ## Installation
 Clone the repository:
-```bash or zsh 
+```bash
 git clone https://github.com/DeniseDiaz13/Arch-Linux-Rice.git
 cd Rice
 ```
@@ -63,14 +60,6 @@ cp .p10k.zsh ~/
 - Designed for Arch Linux  
 - Some dependencies must be installed manually  
 - Paths and configs may require adjustment depending on your system  
-- For autologin, you need to create or modify `/etc/systemd/system/getty@tty1.service.d/override.conf` 
-and add the following lines, (replace USER with your system username; do not include brackets):
-```
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --autologin {USER} --noclear %I $TERM
-```
-- Don’t forget to grant execute permissions to the .sh files (chmod u+x)
 
 ## Credits
 Configurations and themes are adapted from various community sources.

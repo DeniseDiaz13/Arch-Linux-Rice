@@ -1,0 +1,17 @@
+bridge-utils 1.7.1-5
+bridge-utils-debug 1.7.1-5
+electron38-bin-debug 38.8.6-1
+librewolf-bin 1:152.0.5_1-1
+librewolf-bin-debug 1:152.0.5_1-1
+logseq-desktop 0.10.15-2
+mod_wsgi-debug 6.0.2-1
+networkmanager-qt5 5.116.0-3
+networkmanager-qt5-debug 5.116.0-3
+onlyoffice-bin 9.4.0-1
+ttf-meslo-nerd-font-powerlevel10k 2.3.3-1
+ufetch-git 0.4.r4.g19a71dc-1
+yay 13.0.1-1
+yay-debug 13.0.1-1
+youtube-music 3.11.0-2
+zapzap 6.5.2.5-1
+zsh-theme-powerlevel10k-git r4313.36f3045d-1

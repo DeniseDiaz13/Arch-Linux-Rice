@@ -96,6 +96,6 @@
   "custom/power": {
     "format": "  ",
     "tooltip": false,
-    "on-click": "~/.config/rofi/powermenu/powermenu.sh",
+    "on-click": "~/.config/rofi/launchers/powermenu.sh",
   }
 }
