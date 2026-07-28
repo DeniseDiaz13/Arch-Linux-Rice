@@ -5,16 +5,20 @@ Personal Linux rice based on Arch Linux using Hyprland as the window manager.
 Focused on a minimal, clean, and functional workflow.
 
 ## Preview
-![Desktop 1](desk_1.png)  
-![Desktop 2](desk_2.png)
+| | |
+|---|---|
+| ![](desk_1.png) | ![](desk_2.png) |
+| ![](desk_3.png) | ![](desk_4.png) |
+
 ![Firefox_config](firefox.png)
 
 ## Core Components
 - **WM:** Hyprland  
+- **Theme:** Nord  
 - **Terminal:** Alacritty  
 - **Launcher:** Rofi  
 - **Bar:** Waybar  
-- **Editor:** Neovim (LunarVim)
+- **Editor:** Neovim (LazyVim)
 - **Alternative Editor:** nano
 - **PDF Viewer:** Zathura  
 - **Shell:** zsh
@@ -25,16 +29,19 @@ Focused on a minimal, clean, and functional workflow.
 - **bat** – cat with syntax highlighting  
 - **fastfetch / ufetch** – system info tools  
 - **htop** – process viewer  
+- **cmatrix** – matrix effect  
 
 ## Firefox Extension
 - **nightTab** – by zombieFox
 
 ## Repository Structure
 - `alacritty/` → terminal configuration  
+- `gsimplecal/` → calendar widget configuration  
 - `hypr/` → Hyprland config  
+- `nvim/` → Neovim (LazyVim) setup  
+- `packages/` → packages installed  
 - `rofi/` → launcher themes and config  
 - `waybar/` → bar configuration  
-- `lvim/` → Neovim (LunarVim) setup  
 - `zathura/` → PDF viewer config  
 
 ## Installation
