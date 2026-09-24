@@ -1,13 +1,17 @@
 /* -- Global rules -- */
 * {
   border: none;
-  font-family: "JetbrainsMono Nerd Font";
-  font-size: 14.5px;
-  min-height: 2px;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 0;
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0);
+  background-color: rgba(43, 48, 59, 0.5);
+  margin: 6px 25px 0px 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 window#waybar.hidden {
@@ -24,21 +28,30 @@ window#waybar.hidden {
 #custom-power,
 #custom-notification {
   color: #000000;
-  border-radius: 10px;
-  margin-bottom: 6px;
-  margin-top: 5px;
-  margin-right: 1px;
-  margin-left: 1px;
-  padding: 0 15px;
+  border-radius: 8px;
+  margin: 6px 3px;
+  padding: 2px 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#custom-archicon {
-  font-size: 20px;
-  padding-left: 10px;
+#custom-archicon:hover,
+#temperature:hover,
+#pulseaudio:hover,
+#custom-music:hover,
+#language:hover,
+#clock:hover,
+#memory:hover,
+#custom-power:hover,
+#custom-notification:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 #custom-archicon {
   background-color: #cda34f;
+  font-size: 17px;
+  padding-left: 12px;
+  padding-right: 14px;
 }
 
 #temperature {
@@ -57,36 +70,6 @@ window#waybar.hidden {
   background-color: #824D6D;
 }
 
-#workspaces {
-  background-color: #223342;
-  border-radius: 10px;
-  margin: 6px 5px;
-  padding: 0px 6px;
-}
-
-#workspaces button {
-  font-size: 20px;
-  color: #738eb7;
-  background: transparent;
-  padding: 4px 6px;
-  border-radius: 6px;
-  transition:
-    color 0.2s ease,
-    background 0.2s ease;
-}
-
-#workspaces button.persistent {
-  color: #ffe808;
-}
-
-#workspaces button.empty {
-  color: #738eb7;
-}
-
-#workspaces button.active {
-  color: #cda34f;
-}
-
 #clock {
   background-color: #4c8585;
 }
@@ -101,4 +84,38 @@ window#waybar.hidden {
 
 #custom-power {
   background-color: #b0413e;
+}
+
+#workspaces {
+  background-color: #223342;
+  border-radius: 8px;
+  margin: 6px 3px;
+  padding: 0px 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+#workspaces button {
+  font-size: 16px;
+  color: #738eb7;
+  background: transparent;
+  padding: 2px 6px;
+  margin: 2px 1px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#workspaces button.persistent {
+  color: #ffe808;
+}
+
+#workspaces button.empty {
+  color: #738eb7;
+}
+
+#workspaces button.active {
+  color: #cda34f;
 }
