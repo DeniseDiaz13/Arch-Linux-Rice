@@ -8,15 +8,21 @@
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0.5);
-  margin: 6px 25px 0px 25px;
-  border-radius: 12px;
+  background: rgba(20, 22, 28, 0.72);
+  margin: 8px 25px 0 25px;
+  padding: 0 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
   transition: all 0.3s ease;
 }
 
 window#waybar.hidden {
   opacity: 0;
 }
+
+
+/* -- General modules -- */
 
 #custom-archicon,
 #temperature,
@@ -27,10 +33,10 @@ window#waybar.hidden {
 #memory,
 #custom-power,
 #custom-notification {
-  color: #000000;
+  color: #161617;
   border-radius: 8px;
   margin: 6px 3px;
-  padding: 2px 12px;
+  padding: 1px 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -47,47 +53,64 @@ window#waybar.hidden {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+
+/* -- Arch -- */
+
 #custom-archicon {
-  background-color: #cda34f;
+  background: rgba(205, 163, 79, 0.88);
   font-size: 17px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-right: 14px;
+  margin-left: 6px;
 }
 
+
+/* -- System -- */
+
 #temperature {
-  background-color: #a1554a;
+  background: rgba(161, 85, 74, 0.88);
 }
 
 #pulseaudio {
-  background-color: #4f6d82;
+  background: rgba(79, 109, 130, 0.88);
 }
 
 #custom-music {
-  background-color: #624D82;
+  background: rgba(98, 77, 130, 0.88);
 }
 
 #language {
-  background-color: #824D6D;
+  background: rgba(130, 77, 109, 0.88);
+  padding-right: 13px;
 }
 
 #clock {
-  background-color: #4c8585;
+  background: rgba(76, 133, 133, 0.88);
 }
 
 #memory {
-  background-color: #838A47;
+  background: rgba(131, 138, 71, 0.88);
 }
 
 #custom-notification {
-  background-color: #8A6F47;
+  background: rgba(138, 111, 71, 0.88);
+  padding-right: 13px;
 }
+
+
+/* -- Power -- */
 
 #custom-power {
-  background-color: #b0413e;
+  background: rgba(176, 65, 62, 0.88);
+  padding-right: 13px;
+  margin-right: 6px;
 }
 
+
+/* -- Workspaces -- */
+
 #workspaces {
-  background-color: #223342;
+  background: rgba(34, 51, 66, 0.88);
   border-radius: 8px;
   margin: 6px 3px;
   padding: 0px 4px;

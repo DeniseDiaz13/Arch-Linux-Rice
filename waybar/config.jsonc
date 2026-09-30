@@ -38,7 +38,6 @@
   },
   "custom/music": {
     "exec": "~/.config/waybar/music-player.sh",
-    "interval": 2,
     "return-type": "text",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
