@@ -5,6 +5,7 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.o.showtabline = 2
+vim.opt.number = true
 
 local augroup = vim.api.nvim_create_augroup("TreesitterStart", { clear = true })
 vim.g.db_ui_save_location = './.db_queries'
