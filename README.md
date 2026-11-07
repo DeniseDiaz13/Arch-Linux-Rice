@@ -5,6 +5,7 @@ Personal Linux rice based on Arch Linux using Hyprland as the window manager.
 Focused on a minimal, clean, and functional workflow.
 
 ## Preview
+![](desk_main.png)
 | | |
 |---|---|
 | ![](desk_1.png) | ![](desk_2.png) |
