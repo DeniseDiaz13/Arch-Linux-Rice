@@ -10,11 +10,13 @@ Focused on a minimal, clean, and functional workflow.
 | ![](desk_1.png) | ![](desk_2.png) |
 | ![](desk_3.png) | ![](desk_4.png) |
 
-![Firefox_config](firefox.png)
+| | |
+|---|---|
+| ![](desk_5.png) | ![](desk_6.png) |
 
 ## Core Components
 - **WM:** Hyprland  
-- **Theme:** Nord  
+- **Theme:** Nordic-darker
 - **Terminal:** Alacritty  
 - **Launcher:** Rofi  
 - **Bar:** Waybar  
@@ -41,6 +43,7 @@ Focused on a minimal, clean, and functional workflow.
 - `nvim/` → Neovim (LazyVim) setup  
 - `packages/` → packages installed  
 - `rofi/` → launcher themes and config  
+- `theme/` → gtk theme
 - `waybar/` → bar configuration  
 - `zathura/` → PDF viewer config  
 
@@ -61,6 +64,15 @@ cp -r alacritty ~/.config/
 cp .zshrc ~/
 cp .nanorc ~/
 cp .p10k.zsh ~/
+```
+
+To apply the GTK theme, run these commands one by one:
+```bash
+sudo cp Nordic-darker.tar.xz /usr/share/themes/
+
+sudo tar -xf /usr/share/themes/Nordic-darker.tar.xz -C /usr/share/themes/
+
+gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker
 ```
 
 ## Notes
