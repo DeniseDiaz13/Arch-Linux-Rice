@@ -9,9 +9,6 @@ Focused on a minimal, clean, and functional workflow.
 |---|---|
 | ![](desk_1.png) | ![](desk_2.png) |
 | ![](desk_3.png) | ![](desk_4.png) |
-
-| | |
-|---|---|
 | ![](desk_5.png) | ![](desk_6.png) |
 
 ## Core Components
